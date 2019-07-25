@@ -1,0 +1,8 @@
+[Unit]
+Description=Upload pacman cache to IPFS
+
+[Path]
+PathChanged=/var/run/pacman-installed
+
+[Install]
+WantedBy=default.target

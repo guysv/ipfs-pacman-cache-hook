@@ -1,0 +1,6 @@
+[Unit]
+Description=Upload pacman cache to IPFS
+
+[Service]
+Type=simple
+ExecStart=/bin/sh -c 'cache-to-ipfs < /var/run/pacman-installed'

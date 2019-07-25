@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# TODO: parse pacman.conf for CacheDir property
+cache_dir=/var/cache/pacman/pkg
+
+xargs expac -S "$cache_dir/%f" < /dev/stdin | \
+    grep -f <(ls -1d $cache_dir/*) | \
+    xargs -L1 sh -c 'ipfs add --pin=false --progress=false $0 || exit 255'
+# TODO: enable configurable pinning? needs to manage state perhaps..
