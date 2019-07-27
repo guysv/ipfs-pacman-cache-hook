@@ -11,7 +11,7 @@ source=(cache-to-ipfs
     install-inotify.hook
     ipfs-pacman-cache.path
     ipfs-pacman-cache.service)
-md5sums=('53d21565ba5b14f208526a5b289d8703'
+md5sums=('9f1b9425e94064161b124e7b5bfef12a'
          'c08be9f5db56adbc2d591fd5be09e81f'
          'b735234abca5e49900087c2fba65c357'
          'a21352465c403063cc504b443067652d')
